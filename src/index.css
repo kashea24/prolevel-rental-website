@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-gold-400 via-gold-300 to-gold-400 bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-gold {
+    @apply bg-gradient-to-r from-gold-600 to-gold-400;
+  }
+  
+  .shadow-gold {
+    box-shadow: 0 10px 40px -10px rgba(245, 158, 11, 0.3);
+  }
+}
